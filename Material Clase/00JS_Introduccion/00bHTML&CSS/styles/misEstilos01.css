@@ -1,0 +1,32 @@
+.bod {
+    background-color: white;
+}
+.hea {
+    background-color: red;
+}
+.sec {
+    background-color: yellow;
+}
+header > p {
+    font-size: 50px;
+}
+section > p {
+    font-size: 30px;
+}
+#uno {
+    color:green;
+}
+#dos {
+    color:blue;
+}
+#tres {
+    color:red;
+}
+#cuatro {
+    color:brown;
+}
+p[name="dodo"]{
+    font-family:fantasy;
+    color: black;
+}
+    

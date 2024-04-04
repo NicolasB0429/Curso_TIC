@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>JavaScript Numbers</h2>
+        <p>JavaScript objects cannot be compared:</p>
+        <p id="comparaA"></p>
+        <p id="comparaB"></p>
+        <script>
+            // x is an object
+            let x = new Number(500);
+            // y is an object
+            let y = new Number(500);
+            document.getElementById("comparaA").innerHTML = (x==y);
+            document.getElementById("comparaB").innerHTML = (x===y);
+        </script>
+    </body>
+</html>
