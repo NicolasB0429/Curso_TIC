@@ -7,7 +7,7 @@ nameInput.addEventListener('keypress', function() {
 });
 
 nameInput.addEventListener('keydown', function() {
-   console.log('tecla presionada');
+   console.log('tecla liberada');
 });
 
 nameInput.addEventListener('keyup', function() {

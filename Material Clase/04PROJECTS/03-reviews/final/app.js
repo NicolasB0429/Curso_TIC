@@ -4,7 +4,7 @@ const reviews = [
     id: 1,
     name: 'susan smith',
     job: 'web developer',
-    img: 'https://www.course-api.com/images/people/person-1.jpeg',
+    img: 'https://www.course-api.com/images/people/person-5.jpeg',
     text: "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry",
   },
   {
@@ -40,9 +40,10 @@ const nextBtn = document.querySelector('.next-btn');
 const randomBtn = document.querySelector('.random-btn');
 
 // set starting item
-let currentItem = 0;
+let currentItem = 3;
 
 // load initial item
+/*
 window.addEventListener('DOMContentLoaded', function () {
   const item = reviews[currentItem];
   img.src = item.img;
@@ -50,7 +51,7 @@ window.addEventListener('DOMContentLoaded', function () {
   job.textContent = item.job;
   info.textContent = item.text;
 });
-
+*/
 // show person based on item
 function showPerson(person) {
   const item = reviews[person];
@@ -61,7 +62,9 @@ function showPerson(person) {
 }
 // show next person
 nextBtn.addEventListener('click', function () {
+  console.log('right')
   currentItem++;
+  console.log('indice:',currentItem)
   if (currentItem > reviews.length - 1) {
     currentItem = 0;
   }
@@ -69,7 +72,9 @@ nextBtn.addEventListener('click', function () {
 });
 // show prev person
 prevBtn.addEventListener('click', function () {
+  console.log('left')
   currentItem--;
+  console.log("indice:", currentItem);
   if (currentItem < 0) {
     currentItem = reviews.length - 1;
   }
@@ -77,7 +82,7 @@ prevBtn.addEventListener('click', function () {
 });
 // show random person
 randomBtn.addEventListener('click', function () {
-  console.log('hello');
+  console.log('random');
 
   currentItem = Math.floor(Math.random() * reviews.length);
   showPerson(currentItem);

@@ -2,6 +2,7 @@
 
 'use strict'
 
+// El this de un objeto se puede si se llama una función flecha, las otras funciones tienen this propio
 console.log('// this no está definido en una función anidada')
 {
   class BankAccount {
@@ -31,6 +32,7 @@ console.log('// this no está definido en una función anidada')
 }
 
 console.log('\n Solución a la vieja usanza')
+
 {
   class BankAccount {
     constructor() { this.balance = 0 }  

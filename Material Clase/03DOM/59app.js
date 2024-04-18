@@ -3,6 +3,7 @@ const container = document.querySelector(".container");
 const list = document.querySelector(".list-items");
 
 function propagacion(e) {
+  // stopPropagation(e);
   console.log("current target", e.currentTarget);
   console.log("target", e.target);
   if (e.target.classList.contains("link")) {
