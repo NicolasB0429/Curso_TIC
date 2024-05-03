@@ -12,10 +12,14 @@ for(let i = 2; i < datos.length; i += 2){
 }
 
 console.log(listaObjeto.toString())
+
 console.log(listaObjeto.search(10))
 console.log(listaObjeto.search('diez'));
 console.log(listaObjeto.search(11));
+console.log(listaObjeto.search(9));
 
+/*
 let enteros = [10,20,30,40,50,60,70,80,90]
 let listaEnteros = LinkedList.fromArreglo(enteros)
 console.log(listaEnteros.toString())
+*/

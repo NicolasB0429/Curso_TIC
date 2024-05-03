@@ -6,4 +6,4 @@ function countDown(number) {
   }
 }
 
-countDown(15)
+countDown(5)

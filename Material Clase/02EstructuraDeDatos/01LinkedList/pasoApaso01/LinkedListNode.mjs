@@ -15,3 +15,9 @@ export class LinkedListNode {
     }
   }
 }
+/* 
+let nodo1 = new LinkedListNode(100)
+let nodo2 = new LinkedListNode(200);
+nodo1.next = nodo2
+console.log(nodo1)
+ */

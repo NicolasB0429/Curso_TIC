@@ -67,3 +67,7 @@ for (let i = 0; i < data.length; i += 2) {
 }
 
 console.log(objetoClase.toString())
+
+for (let i = 0; i < data.length; i += 2) {
+  console.log('data',objetoClase[i].data,'value',objetoClase[i].value)
+}

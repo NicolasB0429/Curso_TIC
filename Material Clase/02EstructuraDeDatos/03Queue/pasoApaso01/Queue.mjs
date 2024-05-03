@@ -20,19 +20,22 @@ export class Queue {
       puntero.next = new QueueNode(value)
       this.tail = puntero.next
       */
+      
       this.tail.next = new QueueNode(value);
       this.tail = this.tail.next;
+      
     }
   };
 
   desencole = () => {
-    let dato = this.head.value;
     if (this.head == null) {
       console.log("cola vacía");
       return -1;
     } else {
+      let dato = this.head.value;
       if (this.head.next == null) {
-        return value;
+        this.head = null
+        this.tail = null
       } else {
         this.head = this.head.next;
       }

@@ -27,14 +27,16 @@ export class Objeto {
   };
 }
 
-/* 
+/*
 let prueba1 = new Objeto(100, "cien");
 let prueba2 = new Objeto(101, "cien");
-console.log(prueba1.toString());
-console.log(prueba1.compareTo(100));
-console.log(prueba1.compareTo("cien"));
-console.log(prueba1.compareTo(101));
-console.log(prueba1.equals(prueba2))
+let prueba3 = new Objeto(100, 'cien')
+console.log('toString',prueba1.toString());
+console.log('compareTo 100',prueba1.compareTo(100));
+console.log('compareTo cien',prueba1.compareTo("cien"));
+console.log('compareTo 101',prueba1.compareTo(101));
+console.log('equals',prueba1.equals(prueba2))
 prueba2 = prueba1
-console.log(prueba1.equals(prueba2));
- */
+console.log('equals',prueba1.equals(prueba2));
+console.log("equals", prueba1.equals(prueba3));
+*/

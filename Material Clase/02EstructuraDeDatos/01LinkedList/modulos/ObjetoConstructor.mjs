@@ -25,7 +25,7 @@ function Objeto(value, data) {
   this.data = data;
 }
 
-Objeto.prototype.toString = () => {
+Objeto.prototype.toString = function () {
   return ` ${this.value} : ${this.data} `;
 };
 
@@ -45,3 +45,8 @@ export let objetoConstructor = [];
 for (let i = 0, y = 0; i < data.length; i += 2, y++) {
   objetoConstructor[y] = new Objeto(data[i], data[i + 1]);
 }
+console.log(objetoConstructor)
+for (let i = 0; i < objetoConstructor.length; i++) {
+  console.log(objetoConstructor[i].toString())
+}
+

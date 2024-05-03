@@ -13,16 +13,16 @@ for (let i = 0; i < cantidad; i++) {
   // console.log("valor", valor);
   switch (valor) {
     case 1:
-      listaFiguras.push(new Rectangulo(valor, 3, "rectangulo"));
+      listaFiguras.push(new Rectangulo(valor+1, 3, "rectangulo"));
       break;
     case 2:
-      listaFiguras.push(new Cuadrado(valor, "cuadrado"));
+      listaFiguras.push(new Cuadrado(valor+2, "cuadrado"));
       break;
     case 3:
-      listaFiguras.push(new Triangulo(2, valor, "triangulo"));
+      listaFiguras.push(new Triangulo(2, valor+3, "triangulo"));
       break;
     case 4:
-      listaFiguras.push(new Circulo(valor, "circulo"));
+      listaFiguras.push(new Circulo(valor+1, "circulo"));
       break;
     default:
       console.log("valor fuera de rango: ", valor);

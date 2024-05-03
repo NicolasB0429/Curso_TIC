@@ -124,7 +124,7 @@ export class TreeBinary {
     }
     // Se encuentra el padre
     let parent = this.findParent(value);
-    console.log("padre\n", parent);
+    console.log(`padre ${value}\n`, parent);
 
     // Caso 1: Se borra una hoja. left == right == null
     if (nodoABorrar.left == null &&

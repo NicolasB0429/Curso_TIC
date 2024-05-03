@@ -41,7 +41,7 @@ export class LinkedList {
     return cuenta;
   };
 
-  findElementos = (value) => {
+  findElements = (value) => {
     let puntero;
     for (puntero = this.head; puntero != null; puntero = puntero.next) {
       if (puntero.value == value) {
@@ -51,7 +51,7 @@ export class LinkedList {
     return puntero;
   };
 
-  searchObjetos = (value) => {
+  searchObject = (value) => {
     let puntero = this.head;
     for (; puntero != null; puntero = puntero.next) {
       // console.log(puntero.toString())

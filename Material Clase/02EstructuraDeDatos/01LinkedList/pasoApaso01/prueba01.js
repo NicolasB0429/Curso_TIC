@@ -1,5 +1,6 @@
 import { LinkedList } from "./LinkedList.mjs";
 
+/* 
 let lista = new LinkedList(3);
 lista.push(2);
 lista.push(1);
@@ -11,6 +12,7 @@ let listaArray = LinkedList.fromArray([1, 2, 3, 4, 5, 6, 7]);
 console.log("lista", listaArray.toString());
 console.log("lista", listaArray.length());
 console.log("lista", lista.length());
+ */
 
 let objetos = [
   {
@@ -80,4 +82,4 @@ let objetos = [
 
 let listaO = LinkedList.fromArray(objetos);
 console.log('listaO',listaO.toString());
-console.log('listaO',listaO.toStringV());
+console.log('listaO',listaO.toStringH());
