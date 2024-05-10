@@ -4,16 +4,15 @@ function Customer(name, age) {
   this.age = age;
 
   this.printInfo = function () {
-    console.log("Customer:nName : " + this.name + " | Age: " + this.age);
+    console.log("Customer:\nName : " + this.name + " | Age: " + this.age);
   };
 }
 
 function DecoratedCustomer(customer, location) {
   
+  this.customer = customer;
   this.name = customer.name;
   this.age = customer.age;
-  
-  this.customer = customer;
   this.location = location;
 
   this.printInfo = function () {
