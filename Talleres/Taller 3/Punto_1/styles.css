@@ -176,11 +176,13 @@ main {
   display: grid;
   place-items: center;
 }
+
 /*
 =============== 
 Modal
 ===============
 */
+
 .hero {
   min-height: 100vh;
   background: url("./hero.jpeg") center/cover no-repeat;

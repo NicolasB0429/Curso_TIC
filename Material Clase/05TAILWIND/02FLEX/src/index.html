@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Intermedio</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body class="h-[300vh]">
+
+    <!-- flex (grow,shrink,basis), justify content, align items, flex wrap, order
+         gap
+    -->
+    
+    <nav class="bg-violet-600 h-20 w-4/6 mx-auto px-8 text-white
+        flex justify-between items-center">
+
+       <h1 class="text-3xl font-extrabold">Logo.</h1>
+
+       <div class="flex gap-4 self-center"> 
+           <a href="#" class="text-lg">Inicio</a>
+           <a href="#" class="text-lg">Acerca de</a>
+           <a href="#" class="text-lg">Contacto</a>
+       </div>
+
+   </nav>
+
+    <h2 class="text-3xl font-extrabold text-center my-12 text-red-500">
+        Galeria de imágenes 
+    </h2>
+
+    <section class="w-[90%] mx-auto flex flex-wrap-reverse gap-x-8 gap-y-4">
+
+        <img src="./assets/1.jpg" class="w-52 h-52 grow object-cover order-1">
+
+        <img src="./assets/2.jpg" class="w-52 h-52 grow object-cover">
+
+        <img src="./assets/3.jpg" class="w-52 h-52 grow object-cover order-2">
+
+        <img src="./assets/4.jpg" class="w-52 h-52 grow object-cover">
+
+        <img src="./assets/5.jpg" class="w-52 h-52 grow object-cover">
+
+        <img src="./assets/6.jpg" class="w-52 h-52 grow object-cover -order-1">
+
+    </section>
+
+</body>
+</html>

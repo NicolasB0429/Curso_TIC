@@ -1,0 +1,38 @@
+NOTA: Se debe tener Node.js
+
+1. Nueva carpeta
+2. comando: npm init -y (dele autor y descripción a package.json) 
+3. comando: npm install -D tailwindcss (Modulos y package-lock.json)
+4. comando: npx tailwindcss init (crea tailwind.configs)
+5. Crear carpeta src
+6. Crear el html dentro de src
+7. Crar carpeta CSS dentro de src
+8. Crar input.css en carpeta css
+9. Copiar y pegar componentes de tailwind en input.css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+10. Crear output.css en carpera css
+11. En archivo talwind.config.js   content: ["./src/**/*.{html,js}"],
+12. En package.json (scripts): "dev": "npx tailwindcss -i ./src/css/css/input.css -o ./src/css/css/output.css --watch"
+13. Comando: npx tailwindcss -i ./src/css/css/input.css -o ./src/css/css/output.css --watch
+14. En el index.html
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+  <h1 class="text-3xl font-bold underline">
+    Hello world!
+  </h1>
+</body>
+</html>
+
+15. Colocar titulo en index.html
+16. Colocar el css en el index.html
+<link href="./css/output.css" rel="stylesheet">
+17. Comando: npm run dev (dev es nombre del ejecutable por decirlo así)
